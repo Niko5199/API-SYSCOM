@@ -1,0 +1,29 @@
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://developers.syscom.mx/api/v1/categorias',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'GET',
+  CURLOPT_HTTPHEADER => array(
+    'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA1NjBjMjcyMWQ2YTM2MWJhZDViZDI0YjlkYTk3ZGYxOTFhNDYyNzI4ZDJkMzQ0ZWUwYjNmNjBhMDdhOGI4ZTc0MzQxOTM5ZjdlMDMxOGU4In0.eyJhdWQiOiJwdXkxaXJlN3NiU1p5TFZRYlRjWXdlTWlwelBVWThFUSIsImp0aSI6IjA1NjBjMjcyMWQ2YTM2MWJhZDViZDI0YjlkYTk3ZGYxOTFhNDYyNzI4ZDJkMzQ0ZWUwYjNmNjBhMDdhOGI4ZTc0MzQxOTM5ZjdlMDMxOGU4IiwiaWF0IjoxNjMyNzc3NjU5LCJuYmYiOjE2MzI3Nzc2NTksImV4cCI6MTY2NDMxMzY1OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.WTQzmiQ1NFaDun0Hll6DkgNj28hX7dBr9jlm2AhcvM1PCW_MI6HKwc1Strz4GgwKN-lftiAlO5y4ptVC8RNz2NJt63V-5oKcEyB8tLKN3OW03X1qNY8TnITCNYGblPEqGpWOM8sk3TJnR9dhTDi5TrBEWOmco6BaTSkEEeog3j_R1UY8fLNfJla6jfxctx1KKcFKkRTv5u_kAwv8NF_8zrg2YdE3p806xvqEaP1n1w0V6cEnuTdcK58ucRCCaRSO8LrS64xipDs2dKlIuqb1xkn-aMm3VKqdhQRs9o1drY5cZ-vBlxtU2dD3zVzYA2at0BavkeIQqDQQPLhKIf3Tef_qq2zIY8Z2tDk5iY-nNEJD0R4Fg2NSZXAvNA7YPxVh_u73c2Kn_c-w-W4l1ZH5RPxXcMPoINDcVJN121ZDr2p6-FfqVWRW0gSDX6k-DuCM7_bsOBroKmks6t31EbgnzVOyvvVMMRd74l4LXnb45z9NF3RM6SLQt1R5Xs4gynQNAvay4uQuVypWDO0ZyObn6UwOMn0jqFfs1enwIMAT1fc3ykVFxfkaJKgkZALcl_yTpoaBBCmEDJOlYES7AE44CDHWCjUPicFUHw5K1lNAMz1-rdI4gMfH_yp41vUjLfN3e0Dtq6xUi1EpBh6pSA6M2tcnpuyOHlTT_kibThDYpCY'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+//echo $response;
+var_dump ($response);
+
+echo "</br></br></br></br>";
+
+echo $response;
+
+?>
